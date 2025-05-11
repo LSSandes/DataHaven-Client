@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+html,
+body {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Hide scrollbar but keep functionality */
+.overflow-y-auto,
+.overflow-x-auto {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track,
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb,
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./assets/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("./assets/Roboto-Light.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./assets/Roboto-Regular.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
