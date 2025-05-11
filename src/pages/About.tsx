@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <div className="flex justify-center items-center gap-3">
-            <img src={LogoAbout} alt="" width={35}/>
+            <img src={LogoAbout} alt="" width={35} />
             <h2
               className="text-3xl font-extrabold text-gray-900 sm:text-4xl"
               style={{ fontFamily: "Roboto-Bold" }}
@@ -32,7 +32,10 @@ const About: React.FC = () => {
               >
                 Our Mission
               </h3>
-              <p className="text-lg text-gray-600">
+              <p
+                className="text-lg text-gray-600"
+                style={{ fontFamily: "Roboto-Regular" }}
+              >
                 We're on a mission to make AI technology accessible to everyone.
                 Our platform provides intuitive tools for engaging with advanced
                 AI models, helping users unlock new possibilities in their work
@@ -46,7 +49,10 @@ const About: React.FC = () => {
               >
                 Our Vision
               </h3>
-              <p className="text-lg text-gray-600">
+              <p
+                className="text-lg text-gray-600"
+                style={{ fontFamily: "Roboto-Regular" }}
+              >
                 We envision a future where AI assists and enhances human
                 capabilities, fostering innovation and creativity across all
                 sectors. Our goal is to be at the forefront of this
@@ -62,7 +68,10 @@ const About: React.FC = () => {
             >
               Our Values
             </h3>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+              className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+              style={{ fontFamily: "Roboto-Regular" }}
+            >
               <div className="bg-white p-6 rounded-lg shadow">
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">
                   Innovation
@@ -99,7 +108,10 @@ const About: React.FC = () => {
             >
               Our Team
             </h3>
-            <p className="text-lg text-gray-600 mb-8">
+            <p
+              className="text-lg text-gray-600 mb-8"
+              style={{ fontFamily: "Roboto-Regular" }}
+            >
               We're a diverse team of engineers, researchers, and designers
               passionate about making AI technology more accessible and useful
               for everyone.

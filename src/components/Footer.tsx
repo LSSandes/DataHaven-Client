@@ -5,6 +5,8 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { MdOutlinePrivacyTip } from "react-icons/md";
+import { PiBuildingApartment } from "react-icons/pi";
 
 const Footer: React.FC = () => {
   return (
@@ -31,7 +33,10 @@ const Footer: React.FC = () => {
 
           <div className="grid grid-cols-2 gap-8 md:col-span-2">
             <div>
-              <h3 className="text-sm font-semibold text-gray-900">Legal</h3>
+              <div className="flex justify-start items-center gap-2">
+                <MdOutlinePrivacyTip className="w-5 h-5" />
+                <h3 className="text-sm font-semibold text-gray-900">Legal</h3>
+              </div>
               <ul className="mt-4 space-y-2">
                 <li>
                   <Link
@@ -53,7 +58,10 @@ const Footer: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-gray-900">Company</h3>
+              <div className="flex justify-start items-center gap-2">
+                <PiBuildingApartment className="w-5 h-5" />
+                <h3 className="text-sm font-semibold text-gray-900">Company</h3>
+              </div>
               <ul className="mt-4 space-y-2">
                 <li>
                   <Link

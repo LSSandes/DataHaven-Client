@@ -1,5 +1,5 @@
 import React from "react";
-import { Check } from "lucide-react";
+import { FaCircleCheck } from "react-icons/fa6";
 
 const Pricing: React.FC = () => {
   const plans = [
@@ -15,7 +15,7 @@ const Pricing: React.FC = () => {
       ],
     },
     {
-      name: "Pro",
+      name: "Professional",
       price: "$29",
       description: "For growing businesses",
       features: [
@@ -66,23 +66,28 @@ const Pricing: React.FC = () => {
               className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col justify-between"
             >
               <div className="px-6 py-8">
-                <h3 className="text-2xl font-bold text-gray-900">
-                  {plan.name}
-                </h3>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    {plan.price}
-                  </span>
-                  {plan.price !== "Custom" && (
-                    <span className="ml-1 text-xl text-gray-500">/mo</span>
-                  )}
+                <div className="flex flex-col justify-center items-start gap-2">
+                  <div
+                    className="mt-4 flex items-baseline"
+                    style={{ fontFamily: "Roboto-Bold" }}
+                  >
+                    <span className="text-4xl font-extrabold text-gray-900">
+                      {plan.price}
+                    </span>
+                    {plan.price !== "Custom" && (
+                      <span className="ml-1 text-xl text-gray-500">/month</span>
+                    )}
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {plan.name}
+                  </h3>
                 </div>
                 <p className="mt-5 text-lg text-gray-500">{plan.description}</p>
-                <div className="pt-6 pb-8">
+                <div className="pt-6 pb-8" style={{fontFamily: "Roboto-Regular"}}>
                   <ul className="space-y-4">
                     {plan.features.map((feature) => (
                       <li key={feature} className="flex items-start">
-                        <Check className="h-6 w-6 text-green-500 flex-shrink-0" />
+                        <FaCircleCheck className="h-6 w-6 text-blue-500 flex-shrink-0" />
                         <span className="ml-3 text-base text-gray-700">
                           {feature}
                         </span>

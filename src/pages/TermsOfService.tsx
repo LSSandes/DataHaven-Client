@@ -12,10 +12,17 @@ const TermsOfService: React.FC = () => {
         </h1>
 
         <div className="prose prose-blue max-w-none">
-          <section className="mb-8 space-y-2 border-b border-gray-300 pb-6">
+          <section
+            className="mb-8 space-y-2 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <div className="flex flex-col justify-start items-start text-gray-600">
-              <span className="font-bold">Effective Date: </span>
-              <span className="font-bold">Last Updated: </span>
+              <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                Effective Date:{" "}
+              </span>
+              <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                Last Updated:{" "}
+              </span>
             </div>
             <p
               className="text-gray-600 mb-4"
@@ -44,9 +51,12 @@ const TermsOfService: React.FC = () => {
             </p>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4 "
+              className="text-2xl  text-gray-900 mb-4 "
               style={{ fontFamily: "Roboto-Bold" }}
             >
               1. Platform Overview
@@ -58,9 +68,12 @@ const TermsOfService: React.FC = () => {
             </p>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               2. User Accounts and Access
@@ -79,8 +92,14 @@ const TermsOfService: React.FC = () => {
             </ul>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
+            <h2
+              className="text-2xl  text-gray-900 mb-4"
+              style={{ fontFamily: "Roboto-Bold" }}
+            >
               3. Data Ownership and Usage
             </h2>
             <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
@@ -90,8 +109,10 @@ const TermsOfService: React.FC = () => {
               </li>
               <li>
                 We do{" "}
-                <span className="font-bold">not own, create, or host</span> the
-                original data.
+                <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                  not own, create, or host
+                </span>{" "}
+                the original data.
               </li>
               <li>
                 Users may not claim any ownership over the data accessed via the
@@ -100,18 +121,30 @@ const TermsOfService: React.FC = () => {
               <li>
                 You may use data and visualizations generated for personal or
                 professional purposes, but{" "}
-                <span className="font-bold">you are solely responsible</span>{" "}
+                <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                  you are solely responsible
+                </span>{" "}
                 for how you use the information.
               </li>
             </ul>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
+            <h2
+              className="text-2xl  text-gray-900 mb-4"
+              style={{ fontFamily: "Roboto-Bold" }}
+            >
               4. Prohibited Activities
             </h2>
             <p className="text-gray-600 mb-4">
-              You agree <span className="font-bold">not to</span>:
+              You agree{" "}
+              <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                not to
+              </span>
+              :
             </p>
             <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
               <li>
@@ -129,15 +162,20 @@ const TermsOfService: React.FC = () => {
             </ul>
             <p className="text-gray-600 mb-4">
               We reserve the right to{" "}
-              <span className="font-bold">suspend or terminate</span> any
-              account that violates these rules or engages in suspicious
+              <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                suspend or terminate
+              </span>{" "}
+              any account that violates these rules or engages in suspicious
               activity.
             </p>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               5. Third-Party Services
@@ -147,16 +185,22 @@ const TermsOfService: React.FC = () => {
             </p>
             <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
               <li>
-                <span className="font-bold">OpenAI</span> for AI-generated
-                summaries and visualizations,
+                <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                  OpenAI
+                </span>{" "}
+                for AI-generated summaries and visualizations,
               </li>
               <li>
-                <span className="font-bold">Stripe</span> for payment
-                processing, and
+                <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                  Stripe
+                </span>{" "}
+                for payment processing, and
               </li>
               <li>
-                <span className="font-bold">Google Analytics</span> for usage
-                analytics.
+                <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                  Google Analytics
+                </span>{" "}
+                for usage analytics.
               </li>
             </ul>
             <p className="text-gray-600 mb-4">
@@ -165,37 +209,49 @@ const TermsOfService: React.FC = () => {
             </p>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               6. Disclaimers and Limitations of Liability
             </h2>
             <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
               <li>
-                <span className="font-bold">No Guarantee of Accuracy:</span>{" "}
+                <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                  No Guarantee of Accuracy:
+                </span>{" "}
                 DataHaven does not verify or guarantee the accuracy,
                 completeness, or timeliness of any data provided.
               </li>
               <li>
-                <span className="font-bold">Use at Your Own Risk:</span> All
-                outputs (summaries, visualizations, etc.) are for informational
-                purposes only. Any actions you take based on this information
-                are strictly at your own risk.
+                <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                  Use at Your Own Risk:
+                </span>{" "}
+                All outputs (summaries, visualizations, etc.) are for
+                informational purposes only. Any actions you take based on this
+                information are strictly at your own risk.
               </li>
               <li>
-                <span className="font-bold">No Liability:</span> We are not
-                liable for any damages or losses resulting from use of the
-                platform, including but not limited to business decisions,
-                financial loss, or legal consequences.
+                <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                  No Liability:
+                </span>{" "}
+                We are not liable for any damages or losses resulting from use
+                of the platform, including but not limited to business
+                decisions, financial loss, or legal consequences.
               </li>
             </ul>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               7. Termination
@@ -206,9 +262,12 @@ const TermsOfService: React.FC = () => {
               harmful activities.
             </p>
           </section>
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               8. Governing Law
@@ -218,9 +277,12 @@ const TermsOfService: React.FC = () => {
               USA, and any disputes shall be resolved exclusively in its courts.
             </p>
           </section>
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section
+            className="mb-8 border-b border-gray-300 pb-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               9. Changes to Terms
@@ -231,16 +293,18 @@ const TermsOfService: React.FC = () => {
               changes implies agreement.
             </p>
           </section>
-          <section className="mb-8">
+          <section className="mb-8" style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               10. Contact Us
             </h2>
             <p className="text-gray-600 mb-4">
               If you have questions about these Terms, please contact us at: 📧{" "}
-              <span className="font-bold">contact@datahaven.tech</span>
+              <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                contact@datahaven.tech
+              </span>
             </p>
           </section>
         </div>

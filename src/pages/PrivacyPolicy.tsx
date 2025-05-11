@@ -14,8 +14,8 @@ const PrivacyPolicy: React.FC = () => {
         <div className="prose prose-blue max-w-none">
           <section className="mb-8 space-y-2 border-b border-gray-300 pb-6">
             <div className="flex flex-col justify-start items-start text-gray-600">
-              <span className="font-bold">Effective Date: </span>
-              <span className="font-bold">Last Updated: </span>
+              <span className="">Effective Date: </span>
+              <span className="">Last Updated: </span>
             </div>
             <p
               className="text-gray-600 mb-4"
@@ -46,76 +46,132 @@ const PrivacyPolicy: React.FC = () => {
 
           <section className="mb-8 border-b border-gray-300 pb-6">
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               1. Information We Collect
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p
+              className="text-gray-600 mb-4"
+              style={{ fontFamily: "Roboto-Regular" }}
+            >
               We collect the following types of information:
             </p>
-            <p className="text-gray-600 mb-4 font-bold">
+            <p
+              className="text-gray-600 mb-4 "
+              style={{ fontFamily: "Roboto-bold" }}
+            >
               a. Information You Provide
             </p>
-            <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+            <ul
+              className="list-disc pl-6 text-gray-600 mb-4 space-y-2"
+              style={{ fontFamily: "Roboto-Regular" }}
+            >
               <li>
-                <span className="font-bold">Account information:</span> Name,
-                email address, password, and billing details (If you are paid
-                user).
+                <span
+                  className=" "
+                  style={{ fontFamily: "Roboto-bold" }}
+                >
+                  Account information:
+                </span>{" "}
+                Name, email address, password, and billing details (If you are
+                paid user).
               </li>
               <li>
-                <span className="font-bold">Communication:</span> Messages or
-                inquiries sent to our support team
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-bold" }}
+                >
+                  Communication:
+                </span>{" "}
+                Messages or inquiries sent to our support team
               </li>
             </ul>
-            <p className="text-gray-600 mb-4 font-bold">
+            <p
+              className="text-gray-600 mb-4 "
+              style={{ fontFamily: "Roboto-Bold" }}
+            >
               b. Automatically Collected Information
             </p>
-            <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+            <ul
+              className="list-disc pl-6 text-gray-600 mb-4 space-y-2"
+              style={{ fontFamily: "Roboto-Regular" }}
+            >
               <li>
-                <span className="font-bold">User Data:</span> Pages visited,
-                actions performed, timestamps, and session duration.
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-Bold" }}
+                >
+                  User Data:
+                </span>{" "}
+                Pages visited, actions performed, timestamps, and session
+                duration.
               </li>
               <li>
-                <span className="font-bold">Device Data:</span> Browser type,
-                operating system, IP address, and screen resolution.
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-Bold" }}
+                >
+                  Device Data:
+                </span>{" "}
+                Browser type, operating system, IP address, and screen
+                resolution.
               </li>
               <li>
-                <span className="font-bold">Analytics Data:</span>
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-Bold" }}
+                >
+                  Analytics Data:
+                </span>
                 Collected via{" "}
-                <span className="font-bold">Google Analytics</span> for site
-                optimization and traffic insights.
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-Bold" }}
+                >
+                  Google Analytics
+                </span>{" "}
+                for site optimization and traffic insights.
               </li>
             </ul>
           </section>
 
           <section className="mb-8 border-b border-gray-300 pb-6">
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               2. How We Use Your Information
             </h2>
             <p className="text-gray-600 mb-4">We use your data to:</p>
-            <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+            <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2" style={{ fontFamily: "Roboto-Regular" }}>
               <li>Provide and maintain the platform</li>
               <li>
                 Manage user accounts and process payments (via{" "}
-                <span className="font-bold">Stripe</span>)
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-Bold" }}
+                >
+                  Stripe
+                </span>
+                )
               </li>
               <li>Improve the service experience</li>
               <li>Monitor for abuse or suspicious activity</li>
               <li>Communicate updates, support, or service notices</li>
             </ul>
-            <p className="text-gray-600 mb-4">
-              We <span className="font-bold">do not sell</span> or rent your
-              personal information to third parties.
+            <p className="text-gray-600 mb-4" style={{ fontFamily: "Roboto-Regular" }}>
+              We{" "}
+              <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                do not sell
+              </span>{" "}
+              or rent your personal information to third parties.
             </p>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section className="mb-8 border-b border-gray-300 pb-6" style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               3. Third-Party Services
@@ -125,16 +181,31 @@ const PrivacyPolicy: React.FC = () => {
             </p>
             <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
               <li>
-                <span className="font-bold">OpenAI</span> - for AI-generated
-                content (data summaries and visualizations)
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-Bold" }}
+                >
+                  OpenAI
+                </span>{" "}
+                - for AI-generated content (data summaries and visualizations)
               </li>
               <li>
-                <span className="font-bold">Strip</span> - for secure payment
-                processing
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-Bold" }}
+                >
+                  Strip
+                </span>{" "}
+                - for secure payment processing
               </li>
               <li>
-                <span className="font-bold">Google Analytics</span> - for
-                traffic and performance analysis
+                <span
+                  className=""
+                  style={{ fontFamily: "Roboto-Bold" }}
+                >
+                  Google Analytics
+                </span>{" "}
+                - for traffic and performance analysis
               </li>
             </ul>
             <p className="text-gray-600 mb-4">
@@ -143,9 +214,9 @@ const PrivacyPolicy: React.FC = () => {
             </p>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section className="mb-8 border-b border-gray-300 pb-6" style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               4. Data Storage and Security
@@ -166,12 +237,12 @@ const PrivacyPolicy: React.FC = () => {
             </ul>
           </section>
 
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section className="mb-8 border-b border-gray-300 pb-6" style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
-              5. Your rights
+              5. Your Rights
             </h2>
             <p className="text-gray-600 mb-4">
               Depending on your location, you may have the right to:
@@ -184,12 +255,15 @@ const PrivacyPolicy: React.FC = () => {
             </ul>
             <p className="text-gray-600 mb-4">
               To make such a request, email us at{" "}
-              <span className="font-bold">contact@datahaven.tech</span>.
+              <span className="" style={{ fontFamily: "Roboto-Bold" }}>
+                contact@datahaven.tech
+              </span>
+              .
             </p>
           </section>
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section className="mb-8 border-b border-gray-300 pb-6" style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               6. Data Retention
@@ -200,9 +274,9 @@ const PrivacyPolicy: React.FC = () => {
               comply with legal obligations or resolve disputes.
             </p>
           </section>
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section className="mb-8 border-b border-gray-300 pb-6" style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               7. Children's Privacy
@@ -212,9 +286,9 @@ const PrivacyPolicy: React.FC = () => {
               13. We do not knowingly collect personal data from children.
             </p>
           </section>
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section className="mb-8 border-b border-gray-300 pb-6" style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               8. International Users
@@ -225,9 +299,9 @@ const PrivacyPolicy: React.FC = () => {
               By using the platform, you consent to this transfer.
             </p>
           </section>
-          <section className="mb-8 border-b border-gray-300 pb-6">
+          <section className="mb-8 border-b border-gray-300 pb-6" style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               9. Policy Updates
@@ -237,9 +311,9 @@ const PrivacyPolicy: React.FC = () => {
               users of significant changes via email or through the platform.
             </p>
           </section>
-          <section className="mb-8 ">
+          <section className="mb-8 " style={{ fontFamily: "Roboto-Regular" }}>
             <h2
-              className="text-2xl font-bold text-gray-900 mb-4"
+              className="text-2xl  text-gray-900 mb-4"
               style={{ fontFamily: "Roboto-Bold" }}
             >
               10. Contact Us
@@ -247,7 +321,10 @@ const PrivacyPolicy: React.FC = () => {
             <p className="text-gray-600 mb-4">
               If you have any questions or concerns about this Privacy Policy,
               reach us at: 📧
-              <span className=" underline font-bold">
+              <span
+                className=" underline "
+                style={{ fontFamily: "Roboto-Bold" }}
+              >
                 contact@datahaven.tech
               </span>
             </p>

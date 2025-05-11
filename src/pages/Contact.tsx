@@ -46,7 +46,11 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="mt-16 max-w-xl mx-auto">
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6">
+          <form
+            onSubmit={handleSubmit}
+            className="grid grid-cols-1 gap-y-6"
+            style={{ fontFamily: "Roboto-Regular" }}
+          >
             <div>
               <label
                 htmlFor="name"
@@ -138,7 +142,7 @@ const Contact: React.FC = () => {
             </div>
           </form>
 
-          <div className="mt-12">
+          <div className="mt-12" style={{ fontFamily: "Roboto-Regular" }}>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div className="flex flex-col items-start justify-start">
                 <div className="flex justify-center items-center gap-2">

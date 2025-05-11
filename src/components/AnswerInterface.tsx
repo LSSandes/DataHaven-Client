@@ -8,7 +8,7 @@ import TableComponent from "./TableComponent";
 import HorizontalBarChartComponent from "./HorizentalbarChartComponent";
 import ChoroplethMap from "./ChoroplethMap";
 import StackedBarChart from "./StackedBarChart";
-import EChartsMap from "./EChartsMap";
+// import EChartsMap from "./EChartsMap";
 import "react-loading-skeleton/dist/skeleton.css";
 
 interface AnswerInterfaceProps {
@@ -103,7 +103,7 @@ const AnswerInterface: React.FC<AnswerInterfaceProps & { query: string }> = ({
                 <HorizontalBarChartComponent chartData={topicData} />
                 <StackedBarChart chartData={topicData} />
                 <ChoroplethMap data={topicData} />
-                <EChartsMap data={topicData} />
+                {/* <EChartsMap data={topicData} /> */}
               </div>
             ))}
           </div>
