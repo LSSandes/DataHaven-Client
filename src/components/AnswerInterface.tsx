@@ -1,4 +1,4 @@
-import { useEffect, useState, CSSProperties } from "react";
+import { useEffect, useState, CSSProperties, useRef } from "react";
 import { RiQuestionAnswerLine } from "react-icons/ri";
 import { BeatLoader } from "react-spinners";
 import { BsRobot } from "react-icons/bs";
@@ -45,6 +45,7 @@ const AnswerInterface: React.FC<AnswerInterfaceProps & { query: string }> = ({
   const [results, setResults] = useState<
     { query: string; summary: string; chartData: any[] }[]
   >([]);
+  const bottomRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (data?.data) {
@@ -57,6 +58,13 @@ const AnswerInterface: React.FC<AnswerInterfaceProps & { query: string }> = ({
     }
   }, [data]);
 
+  useEffect(() => {
+    if (loading && bottomRef.current) {
+      bottomRef.current.scrollIntoView({ behavior: "smooth" });
+      window.scrollBy(0, -1000);
+    }
+  }, [loading, results]);
+
   return (
     <div className="flex flex-col w-full justify-start items-center gap-5">
       {results.length > 0 && (
@@ -67,6 +75,7 @@ const AnswerInterface: React.FC<AnswerInterfaceProps & { query: string }> = ({
       )}
       <div className="w-full flex flex-col justify-start items-start max-h-[1000px] overflow-y-auto">
         {/* Display all saved results */}
+
         {results.map((result, index) => (
           <div
             key={index}
@@ -110,6 +119,7 @@ const AnswerInterface: React.FC<AnswerInterfaceProps & { query: string }> = ({
         ))}
 
         {/* Loading and skeleton for new data */}
+
         {loading && (
           <div className="w-full flex justify-start items-center gap-2 mt-4">
             <div className="flex justify-center items-center gap-2">
@@ -132,8 +142,10 @@ const AnswerInterface: React.FC<AnswerInterfaceProps & { query: string }> = ({
           <div className="w-full mt-2">
             <Skeleton count={4} width={"100%"} />
             <Skeleton width={"60%"} style={{ width: "60%" }} />
+            <div className="w-full h-[500px]"></div>
           </div>
         )}
+        <div ref={bottomRef}></div>
 
         {/* Display error if any */}
         {data?.error && (
@@ -141,6 +153,7 @@ const AnswerInterface: React.FC<AnswerInterfaceProps & { query: string }> = ({
             {data.error || "An error occurred"}
           </div>
         )}
+        {/* Scroll to bottom reference */}
       </div>
     </div>
   );

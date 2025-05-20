@@ -25,7 +25,7 @@ const TableComponent: React.FC<TableComponentProps> = ({ tableData }) => {
   const countryNames = tableData.country.map((country) => country.country_name);
 
   return (
-    <div className="overflow-x-auto max-w-[1000px]">
+    <div className="overflow-x-auto max-w-[900px]">
       <table className="table-auto border-collapse border border-gray-300 w-full text-sm text-left">
         <thead>
           <tr>

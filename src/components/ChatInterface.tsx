@@ -40,8 +40,8 @@ const ChatInterface: React.FC = () => {
       const response = await axios.post(`${env.BASE_URL}/data/generate`, {
         prompt: query,
       });
-      console.log("-----------ok--------->", response.data.data);
-      setAnswer(response.data.data);
+      console.log("-----------ok--------->", response.data);
+      setAnswer(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
     } finally {

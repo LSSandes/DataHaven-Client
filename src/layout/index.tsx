@@ -18,8 +18,12 @@ export default function Layout() {
   }, []);
   return (
     <div className="flex flex-col w-full h-auto">
-      <Header toggleMobileSidebar={toggleSidebar} />
-      <Outlet />
+      <div className="fixed w-full z-50">
+        <Header toggleMobileSidebar={toggleSidebar} />
+      </div>
+      <div className="mt-28">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
