@@ -96,25 +96,27 @@ const AnswerInterface: React.FC<AnswerInterfaceProps & { query: string }> = ({
             )}
 
             {/* Display chart data for each topic */}
-            {result.chartData.map((topicData, topicIndex) => (
-              <div
-                key={topicIndex}
-                className="flex flex-col w-full justify-center items-center gap-5 border-t border-gray-200 pt-5"
-              >
-                {/* Topic Title */}
-                <div className="w-full text-gray-700 font-bold text-lg">
-                  {topicData.Topic}
-                </div>
+            {result.chartData &&
+              Array.isArray(result.chartData) &&
+              result?.chartData?.map((topicData, topicIndex) => (
+                <div
+                  key={topicIndex}
+                  className="flex flex-col w-full justify-center items-center gap-5 border-t border-gray-200 pt-5"
+                >
+                  {/* Topic Title */}
+                  <div className="w-full text-gray-700 font-bold text-lg">
+                    {topicData.Topic}
+                  </div>
 
-                {/* Render charts for the topic */}
-                <TableComponent tableData={topicData} />
-                <ChartComponent chartData={topicData} />
-                <HorizontalBarChartComponent chartData={topicData} />
-                <StackedBarChart chartData={topicData} />
-                <ChoroplethMap data={topicData} />
-                {/* <EChartsMap data={topicData} /> */}
-              </div>
-            ))}
+                  {/* Render charts for the topic */}
+                  <TableComponent tableData={topicData} />
+                  <ChartComponent chartData={topicData} />
+                  <HorizontalBarChartComponent chartData={topicData} />
+                  <StackedBarChart chartData={topicData} />
+                  <ChoroplethMap data={topicData} />
+                  {/* <EChartsMap data={topicData} /> */}
+                </div>
+              ))}
           </div>
         ))}
 
