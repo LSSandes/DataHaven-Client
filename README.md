@@ -24,4 +24,6 @@ This tool integrates with **Eurostat, World Bank, and UN Data**, combines them t
 - **Infrastructure:** Docker, GCP/AWS
 
 ## Video Demo
-[!Datavisualization](assets/datavisualization.gif)
+| 📊 AI powered data visualization tool |
+|----------------------------------------------|
+| ![data_visualization](assets/datavisualization.gif)   |
